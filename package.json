@@ -1,41 +1,35 @@
 {
-  "name": "kuiz-md",
-  "version": "0.1.4",
-  "description": "Generate quiz from Markdown",
-  "main": "dist/index.js",
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "Kuiz.md landing page",
+  "main": "index.html",
   "scripts": {
     "start": "webpack-dev-server",
-    "prepublish": "webpack"
+    "deploy": "webpack && cp index.html dist/ && cp bundle.js dist/ && cp logo.png dist/ && cp background.jpg dist/  && firebase deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Orbmancer/kuiz.md.git"
-  },
-  "author": "Orbmancer",
+  "keywords": [
+    "quiz",
+    "kuiz",
+    "markdown",
+    "landing",
+    "kuiz.md"
+  ],
+  "author": "Damien Bry <twitter.com/Orbmancer>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Orbmancer/kuiz.md/issues"
-  },
   "dependencies": {
-    "create-react-class": "^15.5.1",
-    "kuiz-md": "^0.1.4",
-    "markdown": "^0.5.0",
-    "prop-types": "^15.5.4",
-    "react": "^15.5.3",
-    "react-dom": "^15.5.3",
-    "react-redux": "^5.0.3",
-    "redux": "^3.6.0"
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.1",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
-    "style-loader": "^0.16.1",
-    "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.11.5"
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

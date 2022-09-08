@@ -1,11 +1,9 @@
 'use strict';
 
 module.exports = {
-  entry: './index.js',      // The entrypoint of your bundle, webpack will fetch all its dependencies
+  entry: './app.js',      // The entrypoint of your bundle, webpack will fetch all its dependencies
   output: {
-    filename: './dist/index.js', // The name of the file you want to generate
-    library: 'kuiz-md',
-    libraryTarget: 'commonjs2'
+    filename: 'bundle.js' // The name of the file you want to generate
   },
   devtool: 'cheap-eval-source-map',
   module: {
